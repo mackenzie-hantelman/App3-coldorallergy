@@ -49,7 +49,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
         }
-
+	
+	var resultText = document.getElementById("results");
+	//Here, I am inserting a function that should display my results (the probability counts) when the results button is pressed//
   </script>
 
 
@@ -188,21 +190,23 @@ second page, so I changed the code for "two" for the button to page three. It wo
 	<div id="content" class="w3-container">
 		<p>			<p>
 		<a href="#seven" class="w3-button w3-black w3-">Click here to see results!</a>
-<!--Here, I am trying to make the Results button on the bottom of this page.
-It did not work, so I added a seventh page for showing results to see if the button would pop up.
-It added to the very first page, so I am looking for a way to add it to the sixth page. I "tabbed" it to fit right under the buttons above.
-I am still seeing the results button on the first page, so I am adding the w3-container above this button. The seventh results page was successful, though.
-The results button will not leave the intro first page, so I am going to make a separate page with a "click here to see results" button.
-I successfully removed the results button from the first page, but there is no space between the top of the website and the button, so I am going to add some.
-The space worked, but the title seems a bit redundant, so I am going to change it.-->
+		<!--Here, I am trying to make the Results button on the bottom of this page.
+		It did not work, so I added a seventh page for showing results to see if the button would pop up.
+		It added to the very first page, so I am looking for a way to add it to the sixth page. I "tabbed" it to fit right under the buttons above.
+		I am still seeing the results button on the first page, so I am adding the w3-container above this button. The seventh results page was successful, though.
+		The results button will not leave the intro first page, so I am going to make a separate page with a "click here to see results" button.
+		I successfully removed the results button from the first page, but there is no space between the top of the website and the button, so I am going to add some.
+		The space worked, but the title seems a bit redundant, so I am going to change it.-->
 
 	</div>
+	
 
 <div class="page" id="eight">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	<!--Here I am adding the final page where it exhibits the results of the probabilities caluclated by the counts from the questions.-->
-		
+	<p id="results">resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;</p>
+	
 	</div>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
