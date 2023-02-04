@@ -132,8 +132,22 @@ I did not work and I realized that I had coded my buttons underneath the page, n
 It still did not work, so I tried adding a </div below it and before the footer.
 It is still not going past the second question, so I am looking into question 2's code. I changed the question headers to say <div id>.
 I switched the cold and allergy counts to the correct yes or no responses. Then, I think I figured out why it was not going past the 
-second page, so I changed the code for "two" for the button to page three.-->
+second page, so I changed the code for "two" for the button to page three. It worked! So I am going to make questions four and five.-->
 		
+</div>
+	
+<div class="page" id="four">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 4</h1>
+		
+	</div>
+		
+	<div id="content" class="w3-container">
+		<p>Are your symptoms seasonal or chronic?</p>
+		<a href="#four" onclick="allergyAdd();" class="w3-button w3-black w3-">Seasonal</a>
+		<a href="#four" onclick="coldAdd();" class="w3-button w3-black">Chronic</a>
+	</div><!--I added the fourth question, but the yes and no didn't really apply so I tried labelling them.-->
+
 </div>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
