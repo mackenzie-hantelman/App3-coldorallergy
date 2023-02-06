@@ -148,39 +148,11 @@ second page, so I changed the code for "two" for the button to page three. It wo
 		<a href="#five" onclick="allergyAdd();" class="w3-button w3-black w3-">Seasonal</a>
 		<a href="#five" onclick="coldAdd();" class="w3-button w3-black">Chronic</a>
 	</div><!--I added the fourth question, but the yes and no didn't really apply so I tried labelling them.-->
-
+	
+	
 </div>
 	
 <div class="page" id="five">
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 5</h1>
-		
-	</div>
-		
-	<div id="content" class="w3-container">
-		<p>Is your phlegm and/or mucus clear? Or does it exhibit a yellow or green color?</p>
-		<a href="#six" onclick="allergyAdd();" class="w3-button w3-black w3-">Clear</a>
-		<a href="#six" onclick="coldAdd();" class="w3-button w3-black">Yellow/Green</a>
-	</div><!--The fourth question worked, so I am now adding my 5th and 6th questions. This question is for cold.-->
-	
-</div>
-	
-<div class="page" id="six">
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 6</h1>
-		
-	</div>
-		
-	<div id="content" class="w3-container">
-		<p>Are you sneezing?</p>
-		<a href="#seven" onclick="allergyAdd();" class="w3-button w3-black w3-">Yes</a>
-		<a href="#seven" onclick="coldAdd();" class="w3-button w3-black">No</a>
-	</div><!--This question is for allergies.-->
-	
-	
-</div>
-	
-<div class="page" id="seven">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Cold or Allergies?</h1>
 		
@@ -198,9 +170,10 @@ second page, so I changed the code for "two" for the button to page three. It wo
 		The space worked, but the title seems a bit redundant, so I am going to change it.-->
 
 	</div>
-	
+	<!--I realized that questions 5 and 6 that we needed to add to the canvas submission were not required on the app, so I removed them and changed the
+	page id's so it would go from question 4 to the resukts page.-->
 
-<div class="page" id="eight">
+<div class="page" id="seven">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	<!--Here I am adding the final page where it exhibits the results of the probabilities caluclated by the counts from the questions.-->
