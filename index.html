@@ -38,6 +38,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
         var allergy_count = 0;
         var cold_count = 0;
+	var resultText = document.getElementById("results");
 
 
         function allergyAdd(){
@@ -48,10 +49,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
         }
+	
+	document.getElementById("results").innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+
 
 	
 	//Here, I am inserting a function that should display my results (the probability counts) when the results button is pressed//
 	//Nothing happened here, so I am trying to put it below with the results page//
+	//It wasn't working, so I am rereading what the assignment says and formatting it in the way the w3school has it on their website. I added both function
+	//codes within the <script> above.//
   </script>
 
 
@@ -181,7 +187,8 @@ second page, so I changed the code for "two" for the button to page three. It wo
 	</div>
 	
 	<div id="content" class="w3-container">
-	
+		<p id="results"></p>
+		
 	</div>
 	
 	<script>
