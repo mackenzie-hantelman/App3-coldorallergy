@@ -50,6 +50,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 	
+	function calculateproballergy(){
+            allergyPercent = allergy_count/4
+	    
+	 }
+	
+	function calculateprobcold(){
+            coldPercent = cold_count/4
+	
+	
 	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
 	
   </script>
@@ -165,7 +174,8 @@ second page, so I changed the code for "two" for the button to page three. It wo
 	
 	<div id="content" class="w3-container">
 		<p>			<p>
-		<a href="#seven" class="w3-button w3-black w3-">results</a>
+		<a href="#seven" class="w3-button w3-black w3-">Click here for results!</a>
+		
 		<!--Here, I am trying to make the Results button on the bottom of this page.
 		It did not work, so I added a seventh page for showing results to see if the button would pop up.
 		It added to the very first page, so I am looking for a way to add it to the sixth page. I "tabbed" it to fit right under the buttons above.
