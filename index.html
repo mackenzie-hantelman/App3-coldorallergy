@@ -48,9 +48,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
         }
+
 	
-	var resultText = document.getElementById("results");
 	//Here, I am inserting a function that should display my results (the probability counts) when the results button is pressed//
+	//Nothing happened here, so I am trying to put it below with the results page//
   </script>
 
 
@@ -177,7 +178,14 @@ second page, so I changed the code for "two" for the button to page three. It wo
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	<!--Here I am adding the final page where it exhibits the results of the probabilities caluclated by the counts from the questions.-->
-	<p id="results">resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;</p>
+	</div>
+	
+	<script>
+		var resultText = document.getElementById("results");
+		
+		<p id="results">resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;</p>
+	<script>
+
 		
 	</div>
 	
