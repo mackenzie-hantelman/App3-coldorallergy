@@ -36,26 +36,28 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
+        var allergy_count = 0; //This establishes the variable of allergy. Everytime the user clicks the button corresponding to allergy, this count increases//
         var cold_count = 0;
 
 
-        function allergyAdd(){
+        function allergyAdd(){ //The actual addition an allergy count is established by this function//
             allergy_count = allergy_count + 1;
 
         }
 
-        function coldAdd(){
+        function coldAdd(){ //Addition of a cold button count is established here//
             cold_count = cold_count + 1;
         }
 	
 	
 	function results(){
-	var allergyPercent = (allergy_count)/(4)*100
-	var coldPercent = (cold_count)/(4)*100
-	var resultText = document.getElementById("results");
+	var allergyPercent = (allergy_count)/(4)*100 //This calculates the probability of having allergies by taking the total allergy count, dividing by
+							//the total number of 4 questions, and multiplying by 100 for a percentage.//
+	var coldPercent = (cold_count)/(4)*100 //The same arithmetic was applied here, but for the cold count//
+	var resultText = document.getElementById("results"); //This line replaces the "results" text in the final page with the probabilities calculated//
 	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
-	
+	//The line above actually spells out what is being replaced, including the calculations made by the functions//
+		
 	}
 		
   </script>
@@ -63,7 +65,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--Here, I am inserting a function that should display my results (the probability counts) when the results button is pressed//
 	Nothing happened here, so I am trying to put it below with the results page//
 	It wasn't working, so I am rereading what the assignment says and formatting it in the way the w3school has it on their website. I added both function
-	codes within the <script> above.-->
+	codes within the <script> above.
+	I realized I was not calculating the actual percentages, so once I added that, I was able to produce a result, and therefore a page.-->
 
 
 <style>	
@@ -89,14 +92,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </style>
 
 <body>
-<div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
-</div>
+<div id="header" class="w3-container w3-flat-carrot"> <!--This section puts text in the upper section of the page-->
+	<h1>Cold or Allergies?</h1> <!--This section contains the actual text within the upper part of the page-->
+</div> <!--This division allows for a seperate section to be made beneath the colored header on the upper portion of the page-->
 	
-<div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies? Answer a few short questions to find out!</p>
+<div id="content" class="w3-container"> <!--This section specifies the body part of the page-->
+	<p>Are you feeling like you might have a cold but wonder if it is allergies? Answer a few short questions to find out!</p> <!--This is the text within the body paragraph-->
 	
-	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!--This line allows the user to move onto the next page by clicking the button. 
+	The w3-"__" specifies the button appearance, from color to shape.-->
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
@@ -109,7 +113,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         	<p>Are your eyes watery or itchy?</p> 
-		<a href="#two" onclick="allergyAdd();" class="w3-button w3-teal w3-round">Yes</a>
+		<a href="#two" onclick="allergyAdd();" class="w3-button w3-teal w3-round">Yes</a> <!--This line does the same thing as above, but also has another function.
+		The "onclick" tells the function specified in the <script> to occur. In this case, If you click "Yes", it adds a count to the allergy count.-->
 		<a href="#two" onclick="coldAdd();" class="w3-button w3-teal w3-round">No</a>
     	</div><!--I am working on coding the first question with the example provided in the assignment. I want to try changing the type of button as well
 		I committed the change to see if it worked, but only the No Button looks right. I am checking my Yes button by adding a carrot and a space.
@@ -158,7 +163,7 @@ second page, so I changed the code for "two" for the button to page three. It wo
 		<p>Are your symptoms seasonal or chronic?</p>
 		<a href="#five" onclick="allergyAdd();" class="w3-button w3-blue w3-round">Seasonal</a>
 		<a href="#five" onclick="coldAdd();" class="w3-button w3-blue w3-round">Chronic</a>
-	</div><!--I added the fourth question, but the yes and no didn't really apply so I tried labelling them.-->
+	</div><!--I added the fourth question, but the yes and no didn't really apply so I tried labelling them more specifically so the user could accurately respond.-->
 	
 	
 </div>
@@ -196,11 +201,12 @@ second page, so I changed the code for "two" for the button to page three. It wo
 		
 	<!--Here I am adding the final page where it exhibits the results of the probabilities caluclated by the counts from the questions.-->
 	<!--I am having trouble understanding the assignment explanation, so I am using the linked Java Script source to attempt the reults display-->
+	<!--I added within the body paragraph of the page the phrase "results" so that the function above could change it to the specified probabilities phrase I typed out in <script>.-->
 		
 	</div>
 	
-<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
+<footer class="w3-bottom w3-container w3-flat-carrot"> <!--This is just like the header portion of the page, but on the bottom of the page-->
+	<p>DIY!</p> <!--This is the text within the footer-->
 </footer>
 
 </body>
