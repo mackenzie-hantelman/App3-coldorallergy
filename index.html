@@ -108,14 +108,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
+		<h1>Question 1</h1> <!--This adds the text inside the <h1> in the header-->
 	</div>
 	
     	<div id="content" class="w3-container">
-        	<p>Are your eyes watery or itchy?</p> 
+        	<p>Are your eyes watery or itchy?</p> <!--This is the text within the body paragraph-->
 		<a href="#two" onclick="allergyAdd();" class="w3-button w3-teal w3-round">Yes</a> <!--This line does the same thing as above, but also has another function.
 		The "onclick" tells the function specified in the <script> to occur. In this case, If you click "Yes", it adds a count to the allergy count.-->
-		<a href="#two" onclick="coldAdd();" class="w3-button w3-teal w3-round">No</a>
+		<a href="#two" onclick="coldAdd();" class="w3-button w3-teal w3-round">No</a> <!--This button adds a count to cold-->
     	</div><!--I am working on coding the first question with the example provided in the assignment. I want to try changing the type of button as well
 		I committed the change to see if it worked, but only the No Button looks right. I am checking my Yes button by adding a carrot and a space.
 		It still did not work so I checked with the reference again for any mistakes. I refreshed the website and I realized that it takes a second to catch up.-->
@@ -123,27 +123,27 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="two">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1>
+		<h1>Question 2</h1> <!--This adds the text inside the <h1> in the header-->
 		
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have a fever?</p>
-		<a href="#three" onclick="coldAdd();" class="w3-button w3-pink w3-round">Yes</a>
-		<a href="#three" onclick="allergyAdd();" class="w3-button w3-pink w3-round">No</a>
+		<p>Do you have a fever?</p> <!--This is the text within the body paragraph-->
+		<a href="#three" onclick="coldAdd();" class="w3-button w3-pink w3-round">Yes</a> <!--This button adds a count to cold.-->
+		<a href="#three" onclick="allergyAdd();" class="w3-button w3-pink w3-round">No</a> <!--This button adds a count to allergy-->
 	</div><!--I added the second question and it worked. I am now going to begin adding question three in the same format it is shown above.-->
 </div>	
 
 <div class="page" id="three">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 3</h1>
+		<h1>Question 3</h1> <!--This adds the text inside the <h1> in the header-->
 		
 	</div>
 		
 	<div id="content" class="w3-container">
-		<p>Do you have a sore throat?</p>
-		<a href="#four" onclick="coldAdd();" class="w3-button w3-green w3-round">Yes</a>
-		<a href="#four" onclick="allergyAdd();" class="w3-button w3-green w3-round">No</a>
+		<p>Do you have a sore throat?</p> <!--This is the text within the body paragraph-->
+		<a href="#four" onclick="coldAdd();" class="w3-button w3-green w3-round">Yes</a> <!--This button adds a count to cold.-->
+		<a href="#four" onclick="allergyAdd();" class="w3-button w3-green w3-round">No</a> <!--This button adds a count to allergy-->
 	</div><!--I now added the third question and am going to run it to see if my retyping was correct.
 I did not work and I realized that I had coded my buttons underneath the page, not under the question.
 It still did not work, so I tried adding a </div below it and before the footer.
@@ -155,14 +155,14 @@ second page, so I changed the code for "two" for the button to page three. It wo
 	
 <div class="page" id="four">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 4</h1>
+		<h1>Question 4</h1> <!--This adds the text inside the <h1> in the header-->
 		
 	</div>
 		
 	<div id="content" class="w3-container">
-		<p>Are your symptoms seasonal or chronic?</p>
-		<a href="#five" onclick="allergyAdd();" class="w3-button w3-blue w3-round">Seasonal</a>
-		<a href="#five" onclick="coldAdd();" class="w3-button w3-blue w3-round">Chronic</a>
+		<p>Are your symptoms seasonal or chronic?</p> <!--This is the text within the body paragraph-->
+		<a href="#five" onclick="allergyAdd();" class="w3-button w3-blue w3-round">Seasonal</a> <!--This button adds a count to allergy-->
+		<a href="#five" onclick="coldAdd();" class="w3-button w3-blue w3-round">Chronic</a> <!--This button adds a count to cold.-->
 	</div><!--I added the fourth question, but the yes and no didn't really apply so I tried labelling them more specifically so the user could accurately respond.-->
 	
 	
@@ -170,12 +170,12 @@ second page, so I changed the code for "two" for the button to page three. It wo
 	
 <div class="page" id="five">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Cold or Allergies?</h1>
+		<h1>Cold or Allergies?</h1> <!--This adds the text inside the <h1> in the header-->
 		
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>			<p>
+		<p>			<p> <!--This is the text within the body paragraph. This one is blank to put a break between the header and button.-->
 		<a href="#seven" onclick="results();" class="w3-button w3-black w3-">Click here for results!</a>
 		
 		<!--Here, I am trying to make the Results button on the bottom of this page.
@@ -192,12 +192,12 @@ second page, so I changed the code for "two" for the button to page three. It wo
 
 <div class="page" id="seven">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Results</h1>
+		<h1>Results</h1> <!--This adds the text inside the <h1> in the header-->
 		
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p id="results"></p>
+		<p id="results"></p> <!--This is the text within the body paragraph-->
 		
 	<!--Here I am adding the final page where it exhibits the results of the probabilities caluclated by the counts from the questions.-->
 	<!--I am having trouble understanding the assignment explanation, so I am using the linked Java Script source to attempt the reults display-->
