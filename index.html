@@ -106,20 +106,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 		<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+		
+	</div>
 
 	<div class="page" id="one">
 		<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1> <!--This adds the text inside the <h1> in the header-->
-		</div>
 		
-	</div>
+		</div>
 	
     	<div id="content" class="w3-container">
         	<p>Are your eyes watery or itchy?</p> <!--This is the text within the body paragraph-->
 		<a href="#two" onclick="allergyAdd();" class="w3-button w3-teal w3-round">Yes</a> <!--This line does the same thing as above, but also has another function.
 		The "onclick" tells the function specified in the <script> to occur. In this case, If you click "Yes", it adds a count to the allergy count.-->
 		<a href="#two" onclick="coldAdd();" class="w3-button w3-teal w3-round">No</a> <!--This button adds a count to cold-->
-    		</div><!--I am working on coding the first question with the example provided in the assignment. I want to try changing the type of button as well
+    		
+		</div><!--I am working on coding the first question with the example provided in the assignment. I want to try changing the type of button as well
 		I committed the change to see if it worked, but only the No Button looks right. I am checking my Yes button by adding a carrot and a space.
 		It still did not work so I checked with the reference again for any mistakes. I refreshed the website and I realized that it takes a second to catch up.-->
 
@@ -128,6 +130,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div class="page" id="two">
 		<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1> <!--This adds the text inside the <h1> in the header-->
+		
 		</div>
 		
 	</div>
@@ -136,6 +139,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Do you have a fever?</p> <!--This is the text within the body paragraph-->
 		<a href="#three" onclick="coldAdd();" class="w3-button w3-pink w3-round">Yes</a> <!--This button adds a count to cold.-->
 		<a href="#three" onclick="allergyAdd();" class="w3-button w3-pink w3-round">No</a> <!--This button adds a count to allergy-->
+		
 		</div><!--I added the second question and it worked. I am now going to begin adding question three in the same format it is shown above.-->
 
 	</div>
