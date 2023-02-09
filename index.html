@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Mackenzie Hantelman
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -17,10 +17,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The goal of this code is to diagnose whether one has a cold or just allergies based on their symptoms. 
  
 Known Issues:
-blah, blah, blah, blah
+There are a limited number of questions to diagnose.
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -92,23 +92,26 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </style>
 
 <body>
-<div id="header" class="w3-container w3-flat-carrot"> <!--This section puts text in the upper section of the page-->
-	<h1>Cold or Allergies?</h1> <!--This section contains the actual text within the upper part of the page-->
-</div> <!--This division allows for a seperate section to be made beneath the colored header on the upper portion of the page-->
-	
-<div id="content" class="w3-container"> <!--This section specifies the body part of the page-->
-	<p>Are you feeling like you might have a cold but wonder if it is allergies? Answer a few short questions to find out!</p> <!--This is the text within the body paragraph-->
-	
-	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!--This line allows the user to move onto the next page by clicking the button. 
-	The w3-"__" specifies the button appearance, from color to shape.-->
-	
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	<div id="header" class="w3-container w3-flat-carrot"> <!--This section puts text in the upper section of the page-->
+		<h1>Cold or Allergies?</h1> <!--This section contains the actual text within the upper part of the page-->
 
-<div class="page" id="one">
-	<div id="header" class="w3-container w3-flat-carrot">
+		</div> <!--This division allows for a seperate section to be made beneath the colored header on the upper portion of the page-->
+	
+	<div id="content" class="w3-container"> <!--This section specifies the body part of the page-->
+		<p>Are you feeling like you might have a cold but wonder if it is allergies? Answer a few short questions to find out!</p> <!--This is the text within the body paragraph-->
+	
+		<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!--This line allows the user to move onto the next page by clicking the button. 
+		The w3-"__" specifies the button appearance, from color to shape.-->
+	
+		<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	
+		<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+
+	<div class="page" id="one">
+		<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1> <!--This adds the text inside the <h1> in the header-->
+		</div>
+		
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -116,14 +119,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<a href="#two" onclick="allergyAdd();" class="w3-button w3-teal w3-round">Yes</a> <!--This line does the same thing as above, but also has another function.
 		The "onclick" tells the function specified in the <script> to occur. In this case, If you click "Yes", it adds a count to the allergy count.-->
 		<a href="#two" onclick="coldAdd();" class="w3-button w3-teal w3-round">No</a> <!--This button adds a count to cold-->
-    	</div><!--I am working on coding the first question with the example provided in the assignment. I want to try changing the type of button as well
+    		</div><!--I am working on coding the first question with the example provided in the assignment. I want to try changing the type of button as well
 		I committed the change to see if it worked, but only the No Button looks right. I am checking my Yes button by adding a carrot and a space.
 		It still did not work so I checked with the reference again for any mistakes. I refreshed the website and I realized that it takes a second to catch up.-->
-</div>
 
-<div class="page" id="two">
-	<div id="header" class="w3-container w3-flat-carrot">
+	</div>
+		
+	<div class="page" id="two">
+		<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1> <!--This adds the text inside the <h1> in the header-->
+		</div>
 		
 	</div>
 	
@@ -131,12 +136,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Do you have a fever?</p> <!--This is the text within the body paragraph-->
 		<a href="#three" onclick="coldAdd();" class="w3-button w3-pink w3-round">Yes</a> <!--This button adds a count to cold.-->
 		<a href="#three" onclick="allergyAdd();" class="w3-button w3-pink w3-round">No</a> <!--This button adds a count to allergy-->
-	</div><!--I added the second question and it worked. I am now going to begin adding question three in the same format it is shown above.-->
-</div>	
+		</div><!--I added the second question and it worked. I am now going to begin adding question three in the same format it is shown above.-->
 
-<div class="page" id="three">
-	<div id="header" class="w3-container w3-flat-carrot">
+	</div>
+
+	<div class="page" id="three">
+		<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1> <!--This adds the text inside the <h1> in the header-->
+		</div>
 		
 	</div>
 		
@@ -144,17 +151,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Do you have a sore throat?</p> <!--This is the text within the body paragraph-->
 		<a href="#four" onclick="coldAdd();" class="w3-button w3-green w3-round">Yes</a> <!--This button adds a count to cold.-->
 		<a href="#four" onclick="allergyAdd();" class="w3-button w3-green w3-round">No</a> <!--This button adds a count to allergy-->
-	</div><!--I now added the third question and am going to run it to see if my retyping was correct.
-I did not work and I realized that I had coded my buttons underneath the page, not under the question.
-It still did not work, so I tried adding a </div below it and before the footer.
-It is still not going past the second question, so I am looking into question 2's code. I changed the question headers to say <div id>.
-I switched the cold and allergy counts to the correct yes or no responses. Then, I think I figured out why it was not going past the 
-second page, so I changed the code for "two" for the button to page three. It worked! So I am going to make questions four and five.-->
-		
-</div>
 	
-<div class="page" id="four">
-	<div id="header" class="w3-container w3-flat-carrot">
+		</div><!--I now added the third question and am going to run it to see if my retyping was correct.
+		I did not work and I realized that I had coded my buttons underneath the page, not under the question.
+		It still did not work, so I tried adding a </div below it and before the footer.
+		It is still not going past the second question, so I am looking into question 2's code. I changed the question headers to say <div id>.
+		I switched the cold and allergy counts to the correct yes or no responses. Then, I think I figured out why it was not going past the 
+		second page, so I changed the code for "two" for the button to page three. It worked! So I am going to make questions four and five.-->
+		
+	</div>
+	
+	<div class="page" id="four">
+		<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1> <!--This adds the text inside the <h1> in the header-->
 		
 	</div>
@@ -163,21 +171,20 @@ second page, so I changed the code for "two" for the button to page three. It wo
 		<p>Are your symptoms seasonal or chronic?</p> <!--This is the text within the body paragraph-->
 		<a href="#five" onclick="allergyAdd();" class="w3-button w3-blue w3-round">Seasonal</a> <!--This button adds a count to allergy-->
 		<a href="#five" onclick="coldAdd();" class="w3-button w3-blue w3-round">Chronic</a> <!--This button adds a count to cold.-->
-	</div><!--I added the fourth question, but the yes and no didn't really apply so I tried labelling them more specifically so the user could accurately respond.-->
+		</div><!--I added the fourth question, but the yes and no didn't really apply so I tried labelling them more specifically so the user could accurately respond.-->
 	
 	
-</div>
+	</div>
 	
-<div class="page" id="five">
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Cold or Allergies?</h1> <!--This adds the text inside the <h1> in the header-->
+	<div class="page" id="five">
+		<div id="header" class="w3-container w3-flat-carrot">
+			<h1>Cold or Allergies?</h1> <!--This adds the text inside the <h1> in the header-->
 		
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p>			<p> <!--This is the text within the body paragraph. This one is blank to put a break between the header and button.-->
 		<a href="#seven" onclick="results();" class="w3-button w3-black w3-">Click here for results!</a>
-		
 		<!--Here, I am trying to make the Results button on the bottom of this page.
 		It did not work, so I added a seventh page for showing results to see if the button would pop up.
 		It added to the very first page, so I am looking for a way to add it to the sixth page. I "tabbed" it to fit right under the buttons above.
@@ -185,15 +192,13 @@ second page, so I changed the code for "two" for the button to page three. It wo
 		The results button will not leave the intro first page, so I am going to make a separate page with a "click here to see results" button.
 		I successfully removed the results button from the first page, but there is no space between the top of the website and the button, so I am going to add some.
 		The space worked, but the title seems a bit redundant, so I am going to change it.-->
+		</div>
+		<!--I realized that questions 5 and 6 that we needed to add to the canvas submission were not required on the app, so I removed them and changed the
+		page id's so it would go from question 4 to the resukts page.-->
 
-	</div>
-	<!--I realized that questions 5 and 6 that we needed to add to the canvas submission were not required on the app, so I removed them and changed the
-	page id's so it would go from question 4 to the resukts page.-->
-
-<div class="page" id="seven">
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Results</h1> <!--This adds the text inside the <h1> in the header-->
-		
+	<div class="page" id="seven">
+		<div id="header" class="w3-container w3-flat-carrot">
+			<h1>Results</h1> <!--This adds the text inside the <h1> in the header-->
 	</div>
 	
 	<div id="content" class="w3-container">
